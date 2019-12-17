@@ -1,3 +1,5 @@
+#include "Wire.h"
+
 void setup() {
 // Slave Setup
 Wire.onRequest(RequestFunction); // Setup here is important to allow your slave device to respond on demand
@@ -14,6 +16,6 @@ void RequestFunction(){
   // On Request use this function
 }
 
-void ReceiveFunction(){
+void ReceiveFunction(int numbytes){
   // On Receive use this function
 }
